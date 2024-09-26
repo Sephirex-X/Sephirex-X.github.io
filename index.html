@@ -19,7 +19,7 @@
   <meta name="author" content="Lingyu Xiao">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" type="image/png" href="./static/images/seu.svg">
+  <link rel="icon" type="image/png" href="static/images/seu.svg">
   <link rel="stylesheet" type="text/css" href="static/css/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="static/css/fontawesome.all.min.css">
 
@@ -41,10 +41,10 @@
                   <p class="name" style="text-align: center;">
                     Sephirex Lingyu Xiao
                   </p>
-                  <p> I am currently a final year Master student supervised by prof. Wankou Yang at the School of Automation, Southeast University, China. Expected to graduate in 2025. I obtained my B.E. degree in Automation (Transportation Information and Controls) from Chang’an University, China, in 2022 with Summa Cum Laude.
+                  <p> I am currently a final year Master student supervised by prof. Wankou Yang at the School of Automation, Southeast University, China. Expected to graduate in 2025. I obtained my B.E. degree in Automation (Transportation Information and Controls) from Chang'an University, China, in 2022 with Summa Cum Laude.
                   </p>
                   <p>
-                    My research interests lie in computer vision and descision-making in Autonomous driving and Robotics. Lots of my projects during undergraduate are focus on embedded systems in robotics (ROS, gazebo, etc.)
+                    My research interests lie in perception and descision-making in Autonomous driving and Robotics. Lots of my projects during undergraduate are focus on embedded systems in robotics (ROS, gazebo, etc.)
                   </p>
                   <p style="text-align:center">
                     <span class="link-block">
@@ -68,7 +68,7 @@
                   </p>
                 </td>
                 <td style="padding:2.5%;width:45%;max-width:40%;">
-                  <a href="./static/images/xly.jpg"><img style="width:80%;max-width:80%;border-radius: 10px;"
+                  <a href="./static/images/xly.jpg"><img style="width:80%;max-width:80%;border-radius: 20px;"
                       alt="profile photo" src="./static/images/xly.jpg" class="hoverZoomLink"></a>
                 </td>
               </tr>
@@ -94,24 +94,27 @@
               <table
                 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
-
-                  <tr>
+<!-- LatentDriver -->
+                  <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
                     <td style="padding:20px;width:30%;vertical-align:middle">
-                      <img id="test" src='./static/images/latentdriver.jpg' alt="game" width="180"
-                        style="border-style: none">
+                      <!-- <img id="test" src='./static/images/latentdriver.jpg' alt="game" width=100%
+                        style="border-style: none"> -->
+                        <video  width=100% muted autoplay loop>
+                          <source src='static/images/latentdriver.mov' type="video/mp4" width=100%>
+                        </video>
                     </td>
-                    <td style="padding:20px;width:70%;vertical-align:top">
+                    <td style="padding:20px;width:70%;vertical-align:middle">
                       <a href="https://Sephirex-X.github.io/LatentDriver/">
                         <papertitle>Learning Multiple Probabilistic Decisions from Latent World Model in Autonomous Driving
                         </papertitle>
                       </a>
                       <br>
-                      <strong>Lingyu Xiao</strong>, Jiang-Jiang Liu, Sen Yang, Xiaofan Li, Xiaoqing Ye, Wankou Yang, Jingdong Wang
+                      <strong>Lingyu Xiao</strong>, Jiang-Jiang Liu, Sen Yang, Xiaofan Li, Xiaoqing Ye, Wankou Yang, Jingdong Wang.
                       <br>
                       <em>Under review</em>, 2024 &nbsp
                       <br>
                       <span class="link-block">
-                        <a href="https://arxiv.org/abs/2409.15730">
+                        <a href="https://arxiv.org/pdf/2409.15730">
                         <span class="icon"><i class="fas fa-file-pdf"></i></span>
                         <span>Paper</span>
                         </a>
@@ -128,13 +131,20 @@
                           <span>Code</span>
                         </a>
                       </span>
+                      <br>
+                      <br>
+                      Exploring the feasibility of deriving decisions from an autoregressive world model through the formulation of multiple probabilistic hypotheses. Achieving expert-level performance on Waymax.
                     </td>
                   </tr>
-                  <tr>
+<!-- Easy -->
+                  <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
                     <td style="padding:20px;width:30%;vertical-align:middle">
-                      <img src='./static/images/easychauffeur.jpg' alt="game" width="180" style="border-style: none">
+                      <!-- <img src='./static/images/easychauffeur.jpg' alt="game" width=100% style="border-style: none"> -->
+                      <video  width=100% muted autoplay loop>
+                        <source src='static/images/easy.mp4' type="video/mp4" width=100%>
+                      </video>
                     </td>
-                    <td style="padding:20px;width:70%;vertical-align:top">
+                    <td style="padding:20px;width:70%;vertical-align:middle">
                       <a>
                         <papertitle>EasyChauffeur: A Baseline Advancing Simplicity and Efficiency on Waymax</papertitle>
                       </a>
@@ -148,27 +158,27 @@
                           <span class="icon"><i class="fas fa-file-pdf"></i></span>
                           <span>Paper</span>
                         </a>
+                      </span>/
+                      <span class="link-block">
+                        <a href="https://drive.google.com/drive/folders/1LpAeBZJzXb7Srgq0fTY9KC6DJY6XjajD" target="_blank">
+                          <span class="icon"><i class="fa-solid fa-database"></i></span>
+                          <span>Supp. Videos</span>
+                        </a>
                       </span>
-                      <!-- <span class="link-block">
-                        <a href="https://jchengai.github.io/planTF/" target="_blank">
-                          <span class="icon"><i class="fa fa-columns"></i></span>
-                          <span>Page</span>
-                        </a>
-                      </span>/ -->
-                      <!-- <span class="link-block">
-                        <a href="https://github.com/Sephirex-X/ADNet" target="_blank">
-                          <span class="icon"><i class="fab fa-github"></i></span>
-                          <span>Code</span>
-                        </a>
-                      </span> -->
+                      <br>
+                      <br>
+                      Suggesting the potential research shift from network architectures to training strategies, data efficiency, and robust evaluation methods in deep-learning based autonomous driving planner.
                     </td>
                   </tr>
-
-                  <tr>
+<!-- UDA -->
+                  <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
                     <td style="padding:20px;width:30%;vertical-align:middle">
-                      <img src='./static/images/uda.jpg' alt="game" width="180" style="border-style: none">
+                      <!-- <img src='./static/images/uda.jpg' alt="game" width=100% style="border-style: none"> -->
+                      <video  width=100% muted autoplay loop>
+                        <source src='static/images/uda.mp4' type="video/mp4" width=100%>
+                      </video>
                     </td>
-                    <td style="padding:20px;width:70%;vertical-align:top">
+                    <td style="padding:20px;width:70%;vertical-align:middle">
                       <a>
                         <papertitle>Domain Adaptive Depth Completion via Spatial-Error Consistency</papertitle>
                       </a>
@@ -177,32 +187,19 @@
                       <br>
                       <em> Under review, Pattern Recognition (<strong>PR</strong>)</em>, 2024
                       <br>
-                      <!-- <span class="link-block">
-                        <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Xiao_ADNet_Lane_Shape_Prediction_via_Anchor_Decomposition_ICCV_2023_paper.pdf" target="_blank">
-                          <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                          <span>Paper</span>
-                        </a>
-                      </span>/ -->
-                      <!-- <span class="link-block">
-                        <a href="https://jchengai.github.io/planTF/" target="_blank">
-                          <span class="icon"><i class="fa fa-columns"></i></span>
-                          <span>Page</span>
-                        </a>
-                      </span>/ -->
-                      <!-- <span class="link-block">
-                        <a href="https://github.com/Sephirex-X/ADNet" target="_blank">
-                          <span class="icon"><i class="fab fa-github"></i></span>
-                          <span>Code</span>
-                        </a>
-                      </span> -->
+                      <br>
+                      Designed a novel training framework to solve the UDA problem in Depth Completion based on a domain/structural-agnostic property. Achieving SOTA on CARLA->KITTI and VKITTI->KITTI.
                     </td>
                   </tr>
-
-                  <tr>
+<!-- ADNet -->
+                  <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
                     <td style="padding:20px;width:30%;vertical-align:middle">
-                      <img src='./static/images/adnet.jpg' alt="game" width="180" style="border-style: none">
+                      <!-- <img src='./static/images/adnet.jpg' alt="lane" width=100% style="border-style: none"> -->
+                      <video  width=100% muted autoplay loop>
+                        <source src='static/images/adnet.mp4' type="video/mp4" width=100%>
+                      </video>
                     </td>
-                    <td style="padding:20px;width:70%;vertical-align:top">
+                    <td style="padding:20px;width:70%;vertical-align:middle">
                       <a>
                         <papertitle>ADNet: Lane Shape Prediction via Anchor Decomposition</papertitle>
                       </a>
@@ -217,12 +214,12 @@
                           <span>Paper</span>
                         </a>
                       </span>/
-                      <!-- <span class="link-block">
-                        <a href="https://jchengai.github.io/planTF/" target="_blank">
+                      <span class="link-block">
+                        <a href="static/docs/adnet-poster.pdf" target="_blank">
                           <span class="icon"><i class="fa fa-columns"></i></span>
-                          <span>Page</span>
+                          <span>Poster</span>
                         </a>
-                      </span>/ -->
+                      </span>/
                       <span class="link-block">
                         <a href="https://github.com/Sephirex-X/ADNet" target="_blank">
                           <span class="icon"><i class="fab fa-github"></i></span>
@@ -230,16 +227,108 @@
                         </a>
                       </span>
                       <br>
-                      <!-- Addressing limitations on traditional anchor-based lane detection methods and develop an novel detection network accordingly. Achieving SOTA on VIL-100. -->
+                      <br>
+                        Addressing limitations on traditional anchor-based lane detection methods and develop a novel detection network accordingly. Achieving SOTA on VIL-100.
                     </td>
                   </tr>
 
 
 
               </table>
+<!-- Projects -->
+              <table
+              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <heading>Hands on Projects</heading>
+  
+                  </td>
+                </tr>
+              </tbody>
+            </table>             
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <video  width=100% muted autoplay loop>
+                    <source src='static/images/robosummary.mp4' type="video/mp4" width=100%>
+                  </video>
+                </td>
+                <td style="padding:20px;width:70%;vertical-align:middle">
+                  <a>
+                    <papertitle>Line-Following and Treasure-Hunting Robot</papertitle>
+                  </a>
+                  <br>
+                  <em>RoboCup Competition, 2021 National 1st Prize in Robot Tourism Group</em>
+                  <br>
+                  Techniques: Electronic design,  Mechanical Design, Control, Computer Vision
+                  <br>
+                  <span class="link-block">
+                    <a href="https://youtu.be/Btgl7rKn-MI" target="_blank">
+                      <span class="icon"><i class="fa-brands fa-youtube"></i></span>
+                      <span>Full Video</span>
+                    </a>
+                  </span>
+                  <br>
+                  <br>
+                  The project requires robots to complete exploration and treasure-hunting tasks within 180 seconds, testing planning, adaptability, positioning, climbing, and obstacle-crossing abilities, while balancing speed and stability.
+                </td>
+              </tr>
+            
+              <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <video  width=100% muted autoplay loop>
+                    <source src='static/images/baidu_robo_summary.mp4' type="video/mp4" width=100%>
+                  </video>
+                </td>
+                <td style="padding:20px;width:70%;vertical-align:middle">
+                  <a>
+                    <papertitle>Autonomous Driving Robot</papertitle>
+                  </a>
+                  <!-- <span class="papertitle"></span> -->
+                  <br>
+                  <em>University Students Intelligent Car Race, 2021 National 3rd Prize in Creative Group</em>
+                  <br>
+                  Techniques: Computer Vision, Mechanical Design, Control 
+                  <br>
+                  <span class="link-block">
+                    <a href="https://youtu.be/mfAHibXcz5M" target="_blank">
+                      <span class="icon"><i class="fa-brands fa-youtube"></i></span>
+                      <span>Full Video</span>
+                    </a> /
+                    <a href="static/docs/Autonomous_Driving_Robot_report.pdf" target="_blank">
+                      <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                      <span>Technical Report (Chinese)</span>
+                    </a>
+                  </span>
+                  <br>
+                  <br>
+                  The competition requires smart cars to follow the lane, identify specific markers, and complete tasks. Finishing is marked by crossing the finish line, and teams are ranked based on total score and time.
+                </td>
+              </tr>
 
-              
+              <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <video  width=100% muted autoplay loop>
+                    <source src='static/images/Drone Landing.mp4' type="video/mp4" width=100%>
+                  </video>
+                </td>
+                <td style="padding:20px;width:70%;vertical-align:middle">
+                  <a>
+                    <papertitle>Drone Landing with Visual Aid</papertitle>
+                  </a>
+                  <br>
+                  <em>Course Project</em>
+                  <br>
+                  Techniques: SLAM, Computer Vision
+                  <br>
+                  <br>
+                  The drone needs to navigate through the unknown maze and land safely.
+                </td>
+              </tr>
 
+            </tbody></table>
+<!-- Honors -->
               <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                 <tbody>
                   <tr>
