@@ -88,21 +88,22 @@ tr,
 p,
 a {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 strong {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 h2 {
     margin: 0;
     font-weight: normal;
+    font-style: italic;
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
+    color: #a50707;
 }
-
 .papertitle {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 14px;
