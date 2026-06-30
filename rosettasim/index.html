@@ -1,39 +1,22 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-55V1E709SK"></script>
+  <meta charset="utf-8">
+  <meta name="description" content="Long-term Traffic Simulation via Structured Autoregressive Modeling.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RosettaSim</title>
+  <link rel="icon" href="static/images/mascot.png" sizes="32x32" type="image/png">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
+    gtag('config', 'G-PYVRSFMDRL');
     gtag('config', 'G-55V1E709SK');
   </script>
 
-  <meta charset="utf-8">
-  <meta name="description" content="Long-term Traffic Simulation via Structured Autoregressive Modeling.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>rosettasim</title>
-  <link rel="icon" href="static/images/rosettasim_icon.png" sizes="32x32" type="image/png">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
-
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
@@ -47,492 +30,314 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
   <script src="./static/js/script.js"></script>
-
 </head>
 
 <body>
-
-  <section class="hero">
+  <section class="hero hero-landing">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Long-term Traffic Simulation via Structured Autoregressive Modeling</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://sephirex-x.github.io/">Lingyu Xiao</a><sup></sup>,</span>
-              <span class="author-block">
-                <a href="https://zexinfeng-cn.github.io/">Zexin Feng</a><sup></sup>,</span>
-              <span class="author-block">
-                <a href="https://yougeyxt.github.io/">Xintao Yan</a><sup></sup>
-            </div>
+        <div class="landing-copy landing-copy-wide has-text-centered">
+          <p class="eyebrow publication-venue-label">ECCV 2026</p>
+          <h1 class="title publication-title">Long-term Traffic Simulation via Structured Autoregressive Modeling</h1>
+          <div class="publication-authors is-size-5">
+            <span class="author-block"><a href="https://sephirex-x.github.io/">Lingyu Xiao</a>,</span>
+            <span class="author-block"><a href="https://zexinfeng-cn.github.io/">Zexin Feng</a>,</span>
+            <span class="author-block"><a href="https://yougeyxt.github.io/">Xintao Yan</a></span>
+          </div>
 
-            <!-- affiliations -->
-            <div class="subtitle is-size-5">
-              <!-- <div class="is-size-5 publication-authors"> -->
-              <!-- <sup>1</sup> NVIDIA &nbsp; -->
-               <sup></sup> The University of Hong Kong &nbsp;
-              <!-- <sup>2</sup> Stanford University &nbsp; -->
-            </div>
+          <div class="publication-meta is-size-5">
+            <span>The University of Hong Kong</span>
+          </div>
 
-            <div class="subtitle is-size-5">
-              <!-- <div class="is-size-5 publication-authors"> -->
-              ECCV 2026
-            </div>
-
-            <!-- TODO: update paper and video link once upload -->
-            <div class="column has-text-centered">
-              <!-- <div class="publication-links"> -->
-              <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/pdf/2403.20309.pdf"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span> -->
-              <span class="link-block">
-                <a href="" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv  (coming soon)</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=fxf_ypd7eD8"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code (coming soon)</span>
-                </a>
-              </span>
-              <!-- Demo Link. -->
-              <!-- <span class="link-block">
-                <a href="https://huggingface.co/spaces/kairunwen/InstantSplat"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span>🤗 Demo</span>
-                </a>
-              </span> -->
-            </div>
-
-
-            <!-- Video Link. -->
-            <!-- <span class="link-block">
-                  <a href="https://youtu.be/470hul75bSM" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                    </span>
-                    <span>Video</span>
-                  </a> -->
+          <div class="hero-actions">
+            <span class="button is-dark is-rounded is-static">
+              <span class="icon"><i class="ai ai-arxiv"></i></span>
+              <span>arXiv coming soon</span>
             </span>
-
+            <span class="button is-light is-rounded is-static">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>Code coming soon</span>
+            </span>
           </div>
 
+          <div class="tldr-card">
+            <p class="tldr-label">TL;DR</p>
+            <p class="tldr-text">
+              Jointly models motion and agent generation under a unified framework, and introduces a fair long-horizon simulation realism assessment.
+            </p>
+            <div class="hero-tags">
+              <span class="hero-tag">Joint motion + generation</span>
+              <span class="hero-tag">LLM Unified</span>
+              <span class="hero-tag">Long-term Evaluation</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
   </section>
 
+  <!-- <section class="section section-tight">
+    <div class="container is-max-desktop">
+      <div class="paper-card teaser-panel">
+        <img class="teaser-image" src="./static/images/teaser.png" alt="RosettaSim teaser figure">
+      </div>
+    </div>
+  </section> -->
 
+  <section class="section section-tight">
+    <div class="container is-max-desktop">
+      <div class="section-intro has-text-centered">
+        <h2 class="title is-3">Highlights</h2>
+        <p class="section-lead">
+          Representative long-horizon rollouts. Focus on stable traffic flow, natural insertions, and interaction consistency.
+        </p>
+      </div>
 
-
-
-  <section class="hero is-light is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-highlight1">
-            <video preload="metadata" poster="" class="teaser-video" id="highlight1" controls muted loop playsinline data-playback-rate="1" style="width: 70%; height: auto;">
-              <source data-src="./static/videos/highlight/1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-highlight2">
-            <video preload="metadata" poster="" class="teaser-video" id="highlight2" controls muted loop playsinline data-playback-rate="1" style="width: 70%; height: auto;">
-              <source data-src="./static/videos/highlight/2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-highlight3">
-            <video preload="metadata" poster="" class="teaser-video" id="highlight3" controls muted loop playsinline data-playback-rate="1" style="width: 70%; height: auto;">
-              <source data-src="./static/videos/highlight/3.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-highlight4">
-            <video preload="metadata" poster="" class="teaser-video" id="highlight4" controls muted loop playsinline data-playback-rate="1" style="width: 70%; height: auto;">
-              <source data-src="./static/videos/highlight/4.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-highlight5">
-            <video preload="metadata" poster="" class="teaser-video" id="highlight5" controls muted loop playsinline data-playback-rate="1" style="width: 70%; height: auto;">
-              <source data-src="./static/videos/highlight/5.mp4?v=20260630-60" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-highlight6">
-            <video preload="metadata" poster="" class="teaser-video" id="highlight6" controls muted loop playsinline data-playback-rate="1" style="width: 70%; height: auto;">
-              <source data-src="./static/videos/highlight/6.mp4?v=20260630-60" type="video/mp4">
-            </video>
-          </div>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video preload="metadata" class="teaser-video" controls muted loop playsinline data-playback-rate="1">
+            <source data-src="./static/videos/highlight/1.mp4" type="video/mp4">
+          </video>
         </div>
-        <div class="is-size-6" style="display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap; font-weight:700;">
-          <div style="color:#5f9fda;"><span>■</span> Ego vehicle</div>
-          <div style="color:#cd7a84;"><span>■</span> Initial agents</div>
-          <div style="color:#73ae4d;"><span>■</span> Spawned agents</div>
+        <div class="item">
+          <video preload="metadata" class="teaser-video" controls muted loop playsinline data-playback-rate="1">
+            <source data-src="./static/videos/highlight/2.mp4" type="video/mp4">
+          </video>
         </div>
-        <p class="is-size-5 has-text-weight-semibold has-text-grey">Existing models struggle to simultaneously manage the dynamic spawning of new vehicles and the realistic interaction of existing ones over long horizons. But what if we treat traffic dynamics as a 'foreign language', leveraging the power of LLMs to seamlessly unify both? </p>  
+        <div class="item">
+          <video preload="metadata" class="teaser-video" controls muted loop playsinline data-playback-rate="1">
+            <source data-src="./static/videos/highlight/3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video preload="metadata" class="teaser-video" controls muted loop playsinline data-playback-rate="1">
+            <source data-src="./static/videos/highlight/4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video preload="metadata" class="teaser-video" controls muted loop playsinline data-playback-rate="1">
+            <source data-src="./static/videos/highlight/5.mp4?v=20260630-60" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video preload="metadata" class="teaser-video" controls muted loop playsinline data-playback-rate="1">
+            <source data-src="./static/videos/highlight/6.mp4?v=20260630-60" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="legend-row">
+        <div class="legend-item legend-ego">■ Ego vehicle</div>
+        <div class="legend-item legend-initial">■ Initial agents</div>
+        <div class="legend-item legend-spawned">■ Spawned agents</div>
       </div>
     </div>
   </section>
- 
-
-
-
 
   <section class="section">
     <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              Interactive traffic simulation is a vital world model for autonomous driving. A central challenge in long-horizon simulation is modeling sustained multi-agent interactions, which is further exacerbated by dynamic token cardinality as agents continuously enter and exit the scene. In this work, we propose that the solution lies in the synergy between the architectural inductive biases and statistical priors of large-scale sequence models, e.g., Large Language Models (LLMs). Our probing experiments reveal that the transferability of attention mechanisms and the distributional consistency between motion tokens and natural language enable small-scale, heavily frozen LLMs to rapidly adapt to traffic modeling. Building on this insight, we introduce RosettaSim, a unified framework that projects scene topology, agent states, and spawning intents into a structured autoregressive stream with variable length, achieving both strong short-term accuracy and stable long-horizon simulation fidelity. Furthermore, evaluating extended rollouts presents yet another hurdle, as one-to-one agent correspondence inevitably fades over time. To address this, we introduce Retrieval-based Traffic Evaluation (RTE), which retrieves semantically similar real-world scenarios as context-aware reference anchors. Experiments on the Waymo Open Sim Agent Challenge (WOSAC) demonstrate that RosettaSim achieves state-of-the-art performance in both short- and long-term simulation. Furthermore, RTE exhibits a stronger correlation with standard metrics (r=0.83) than existing approaches (r=0.74), indicating improved alignment with long-horizon simulation fidelity.
-            </p>
-
-
-          </div>
-        </div>
+      <div class="section-intro has-text-centered">
+        <h2 class="title is-3">Abstract</h2>
       </div>
-      <!--/ Abstract. -->
-      <!-- <div class="column is-four-fifths"></div>
-      <div class="has-text-centered">
-        <h2 class="title is-3">Video</h2>
-        <video preload="metadata" controls>
-          <source src="static/videos/demo1.mp4" type="video/mp4">
-          Your browser does not support the video.
-        </video>
-      </div> -->
-      <!-- The following is the way to insert through link -->
-      <!-- <div class="publication-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/470hul75bSM?si=7F9NL8zWbU9GtqHb"
-            title="YouTube video player" frameborder="0" allow="accelerometer;; 
-         encrypted-media; " allowfullscreen></iframe> -->
-    </div>
+
+      <p class="section-lead abstract-copy">
+        Interactive traffic simulation is a vital world model for autonomous driving. A central challenge in
+        long-horizon simulation is modeling sustained multi-agent interactions, which is further exacerbated by
+        dynamic token cardinality as agents continuously enter and exit the scene. In this work, we propose that the
+        solution lies in the synergy between the architectural inductive biases and statistical priors of large-scale
+        sequence models, such as LLMs. Our probing experiments reveal that the transferability of attention
+        mechanisms and the distributional consistency between motion tokens and natural language enable small-scale,
+        heavily frozen LLMs to rapidly adapt to traffic modeling. Building on this insight, we introduce RosettaSim,
+        a unified framework that projects scene topology, agent states, and spawning intents into a structured
+        autoregressive stream with variable length, achieving both strong short-term accuracy and stable long-horizon
+        simulation fidelity. We further introduce Retrieval-based Traffic Evaluation (RTE), which retrieves
+        semantically similar real-world scenarios as context-aware reference anchors. On WOSAC, RosettaSim achieves
+        state-of-the-art performance in both short- and long-term simulation, while RTE exhibits a stronger
+        correlation with standard metrics (r = 0.83) than existing long-term evaluation approaches (r = 0.74).
+      </p>
     </div>
   </section>
 
+  <section class="section section-soft">
+    <div class="container is-max-desktop">
+      <div class="section-intro has-text-centered">
+        <h2 class="title is-3">RosettaSim</h2>
+        <img class="hero-mascot section-mascot" src="./static/images/mascot.png" alt="RosettaSim mascot">
+        <p class="section-lead">
+          RosettaSim uses LLM priors as a structural prior for long-range traffic modeling, then rolls out scenes with
+          parallel motion updates and autoregressive agent generation.
+        </p>
+      </div>
 
+      <div class="feature-stack">
+        <article class="paper-card feature-panel">
+          <div class="feature-copy">
+            <p class="card-label">Motivation</p>
+            <h3 class="title is-3">Why do LLM priors transferable to traffic?</h3>
+            <p class="feature-text">
+              Two empirical observations motivate RosettaSim: traffic motion tokens exhibit Zipf-like statistics
+              similar to language, and even small frozen or heavily constrained LLMs adapt quickly to traffic motion
+              modeling. Together, these results suggest that pretrained LLMs provide a useful sequence prior beyond language.
+            </p>
+          </div>
+          <div class="feature-figure-grid">
+            <div class="media-card feature-media feature-media-wide">
+              <img src="./static/images/dis.png" alt="Zipf-like traffic token distribution from the paper">
+            </div>
+            <!-- <div class="media-card feature-media feature-media-compact">
+              <img src="./static/images/llm_prior_ablation_from_paper.png" alt="LLM prior ablation from the paper">
+            </div> -->
+          </div>
+        </article>
+
+        <article class="paper-card feature-panel">
+          <div class="feature-copy">
+            <p class="card-label">Method</p>
+            <h3 class="title is-3">Structured rollout with motion update and agent generation</h3>
+            <p class="feature-text">
+              We formulate long-term traffic simulation as structured sequence generation with two coupled processes:
+              parallel motion generation for active agents and autoregressive agent generation for scene evolution.
+              This keeps interaction reasoning and population dynamics aligned within one token stream throughout rollout.
+            </p>
+          </div>
+          <div class="media-card feature-media feature-media-wide">
+            <img src="./static/images/pipeline.png" alt="RosettaSim pipeline">
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <section class="section">
     <div class="container is-max-desktop">
-      <!-- Concurrent Work. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">RosettaSim</h2>
-          <!-- <h2 class="title is-4">Motivation</h2> -->
-          <p class="is-size-5 has-text-weight-semibold has-text-grey">Large-sequence model, e.g. LLMs are excelling at long-range dependencies modeling, Can LLMs effectively model traffic dynamics without relying on linguistic supervision ?</p>
-          <div class="content has-text-justified">
-            <img src="./static/images/dis.png">
-            <p><strong>Insight: </strong>
-              The frequency distribution of discretized traffic motion tokens closely mirrors the statistical properties of natural language, in other words, Zipf's Law. Motivated by <a href="https://arxiv.org/abs/2205.05055">this work</a>, it is possible to leverage both LLM's prior and structural for traffic simulation. </p>
-          </div>          
-          <p class="is-size-5 has-text-weight-semibold has-text-grey">Implementation</p>
-          <!-- <h2 class="title is-4">Implementation</h2> -->
-          <div class="content has-text-justified">
-            <img src="./static/images/pipeline.png">
-            <p><strong>RosettaSim Pipeline: </strong>
-              We formulate the long-term traffic simulation as
-a structured sequence generation problem, which consists of parallel motion generation and autoregressive agent generation. During rollout, RosettaSim first generation current agents' action in parallel and then autoregressively spawn agents.</p>
-          </div>
-          
-        </div>
+      <div class="section-intro has-text-centered">
+        <h2 class="title is-3">Retrieval-based Traffic Evaluation (RTE)</h2>
+        <p class="section-lead">
+          Long-horizon rollouts break one-to-one agent matching. RTE replaces context-blind global matching with
+          semantically retrieved reference scenarios.
+        </p>
       </div>
-      <!--/ Concurrent Work. -->
 
+      <div class="rte-stack">
+        <article class="paper-card rte-panel">
+          <div class="feature-copy">
+            <p class="card-label">Problem</p>
+            <h3 class="title is-3">Why standard long-horizon metrics fail</h3>
+            <p class="feature-text">
+              After a few seconds, strict agent-level correspondence breaks down. Global histogram matching is also
+              unfair because it forces local scenarios to resemble a dataset-wide average rather than a context-aware reference.
+            </p>
+          </div>
+          <div class="media-card feature-media feature-media-wide">
+            <img src="./static/images/why_std_fail.png" alt="Why standard metrics fail">
+          </div>
+        </article>
+
+        <article class="paper-card rte-panel">
+          <div class="feature-copy">
+            <p class="card-label">Mechanism</p>
+            <h3 class="title is-3">RTE retrieves scenario-specific anchors</h3>
+            <p class="feature-text">
+              RTE uses a pretrained scene-VAE latent space to retrieve semantically similar real-world scenarios,
+              then evaluates rollouts against those retrieved anchors instead of against the whole validation distribution.
+            </p>
+          </div>
+          <div class="media-card feature-media feature-media-wide">
+            <img src="./static/images/RTE.png" alt="RTE pipeline">
+          </div>
+        </article>
+
+        <article class="paper-card rte-panel">
+          <div class="feature-copy">
+            <p class="card-label">Validation</p>
+            <h3 class="title is-3">RTE aligns better with realism</h3>
+            <p class="feature-text">
+              Across 63 rollouts, RTE achieves stronger correlation with standard realism metrics than prior
+              log-based long-horizon evaluation, supporting better alignment with actual simulation fidelity.
+            </p>
+          </div>
+          <div class="media-card feature-media feature-media-wide">
+            <img src="./static/images/correlation.png" alt="Correlation comparison for RTE">
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-
-
-  <section class="section">
+  <section class="section section-soft">
     <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Retrieval-based Long-term Traffic Evaluation (RTE)</h2>
-          
-          <p class="is-size-5 has-text-weight-semibold has-text-grey">Why Standard WOSAC Metrics Fail in Long-Horizon Simulation?</p>
-          <div class="content has-text-justified">
-            <img src="./static/images/why_std_fail.png">
-            <p>
-              <strong>LEFT:</strong> impossible under long-term setting, since no agent level matching available after a few seconds. <strong>RIGHT:</strong> Context-blind and unfair, forcing local scenarios to match global average statistics.
-               
-            </p>
-          </div>
-          
-          <p class="is-size-5 has-text-weight-semibold has-text-grey">Implementation</p>
-          <div class="content has-text-justified">
-            <img src="./static/images/RTE.png">
-            <p>
-              <!-- <strong>Schematic comparison of CAT-K rollout, top-K sampling, and data augmentation techniques of <a
-                  href="https://arxiv.org/abs/2312.04535">Trajeglish</a>
-                and <a href="https://arxiv.org/abs/2405.15677">SMART</a>.</strong>  -->
-                <strong> Pipeline of RTE:</strong>
-              Instead of using global log distribution as ground truth for histogram matching, we leverage a  <a href="https://arxiv.org/abs/2503.22496">pre-trained scene VAE</a> to anchor K semantically similar real-world scenarios as reference for evaluation, which significantly improves the correlation with long-term simulation fidelity.
-            </p>
-          </div>
-          <p class="is-size-5 has-text-weight-semibold has-text-grey">Is RTE Fair?</p>
-          <div class="content has-text-justified">
-            <img src="./static/images/correlation.png">
-            <p>
-              <!-- <strong>Schematic comparison of CAT-K rollout, top-K sampling, and data augmentation techniques of <a
-                  href="https://arxiv.org/abs/2312.04535">Trajeglish</a>
-                and <a href="https://arxiv.org/abs/2405.15677">SMART</a>.</strong>  -->
-                <strong> Fairness of RTE:</strong>
-              We calculate 63 different rollouts under short-term WOSAC, log-based histogram matching, and RTE evaluation, and compute the correlation between the evaluation results and standard WOSAC. RTE achieves a significantly higher correlation (r=0.83) than log-based histogram matching (r=0.74).
-            </p>
-          </div>
-        </div>
+      <div class="section-intro has-text-centered">
+        <h2 class="title is-3">Simulation Results</h2>
+        <p class="section-lead">
+          Representative long-term rollouts from RosettaSim. Videos are shown at 6× speed for compact browsing.
+        </p>
+      </div>
+
+      <div class="results-note">
+        <strong>How to read these results:</strong> focus on stable flow, natural insertions, and interaction
+        consistency over extended horizons rather than short isolated maneuvers.
+      </div>
+
+      <div class="results-grid">
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/439910632cf3a8aa_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/133909060e07b803_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/57852c7118cb2637_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/35675d6888fb2dd_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/8356c022dd5b22cf_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/6188eef2aa35d768_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/5971f2872e9e7888_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/662d169a98bdda26_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/630acf607af029d9_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/336c4ff2fc5fcebb_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/97e846d89b2c962d_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/28c0aa7ab0aeea8_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/22bdbc45eca3e6e_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/9f3a5145b6030d95_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/8b1505c3d73789c8_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/6d8dba8f02e7d299_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/6ce5333016cc47b7_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/5d82151c5ac7b48_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/2ea8f327dc0f9a64_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/2e083a5d0f1665f1_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/1e0467f46d81522d_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/d3307f1165a81e0e_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/b6bc01c4c919c773_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
+        <video preload="metadata" controls muted loop playsinline data-playback-rate="1"><source data-src="./static/videos/ours/a51e50289f6c9ed0_001.gif.mp4?v=20260630-6xbaked" type="video/mp4"></video>
       </div>
     </div>
   </section>
-
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Simulation Results (6x speed)</h2>
-          <div class="content">
-
-            <div class="columns is-variable is-3">
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/439910632cf3a8aa_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/133909060e07b803_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/57852c7118cb2637_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-            </div>
-
-            <div class="columns is-variable is-3">
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/35675d6888fb2dd_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/8356c022dd5b22cf_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/6188eef2aa35d768_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-            </div>
-
-            <div class="columns is-variable is-3">
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/5971f2872e9e7888_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/662d169a98bdda26_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/630acf607af029d9_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-            </div>
-
-            <div class="columns is-variable is-3">
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/336c4ff2fc5fcebb_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/97e846d89b2c962d_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/28c0aa7ab0aeea8_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <div class="columns is-variable is-3">
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/22bdbc45eca3e6e_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/9f3a5145b6030d95_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/8b1505c3d73789c8_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-            </div>
-
-            <div class="columns is-variable is-3">
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/6d8dba8f02e7d299_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/6ce5333016cc47b7_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/5d82151c5ac7b48_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-            </div>
-
-            <div class="columns is-variable is-3">
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/2ea8f327dc0f9a64_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/2e083a5d0f1665f1_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/1e0467f46d81522d_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <div class="columns is-variable is-3">
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/d3307f1165a81e0e_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/b6bc01c4c919c773_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-              <div class="column is-one-third">
-                <video preload="metadata" controls muted loop playsinline data-playback-rate="1" style="width: 100%; height: auto;">
-                  <source data-src="./static/videos/ours/a51e50289f6c9ed0_001.gif.mp4?v=20260630-6xbaked" type="video/mp4">
-                </video>
-              </div>
-            </div>
-
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            Needs update
-          </p>
-         
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section> -->
-
 
   <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      Coming soon!
-      <!-- <pre><code>@inproceedings{zhang2025closed,
-        title = {Closed-Loop Supervised Fine-Tuning of Tokenized Traffic Models},
-        author = {Zhang, Zhejun and Karkus, Peter and Igl, Maximilian and Ding, Wenhao and Chen, Yuxiao and Ivanovic, Boris and Pavone, Marco},
-        booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-        year = {2025},
-      } -->
-</code></pre>
-
+    <div class="container is-max-desktop">
+      <div class="section-intro has-text-centered">
+        <h2 class="title is-3">BibTeX</h2>
+        <p class="section-lead">We will add the final arXiv and citation entry here once the paper is public.</p>
+      </div>
+      <div class="paper-card bibtex-card">
+        <code>@article{rosettasim2026, title = {Long-term Traffic Simulation via Structured Autoregressive Modeling}, author = {Xiao, Lingyu and Feng, Zexin and Yan, Xintao}, year = {2026} }</code>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <div class="content has-text-centered">
-        <!-- <a class="icon-link" href="">
-          <i class="fas fa-file-pdf"></i>
-        </a> -->
-        <!-- <a class="icon-link" href="" class="external-link" disabled>
-          <i class="fab fa-github"></i> -->
-        </a>
-      </div>
       <div class="columns is-centered">
         <div class="column is-8">
-          <div class="content">
+          <div class="content has-text-centered">
             <p>
-              This website is licensed under a <a rel="license"
-                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-                Commons Attribution-ShareAlike 4.0 International License</a>.
+              This website is licensed under a
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                Creative Commons Attribution-ShareAlike 4.0 International License
+              </a>.
             </p>
             <p>
-              We thank the authors of
-              We thank the authors of <a href="https://nerfies.github.io/">Nerfies</a> that kindly open sourced the
-              template of this website.
+              The website template is adapted from
+              <a href="https://nerfies.github.io/">Nerfies</a>.
             </p>
           </div>
         </div>
       </div>
     </div>
   </footer>
-
 </body>
-
 </html>
