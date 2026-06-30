@@ -55,6 +55,24 @@ class BeforeAfter {
 document.addEventListener('DOMContentLoaded', () => {
     const videos = document.querySelectorAll('video');
 
+    const loadVideoSources = (video) => {
+        if (video.dataset.loaded === 'true') {
+            return;
+        }
+
+        const lazySources = video.querySelectorAll('source[data-src]');
+        lazySources.forEach((source) => {
+            source.src = source.dataset.src;
+            source.removeAttribute('data-src');
+        });
+
+        if (lazySources.length > 0) {
+            video.load();
+        }
+
+        video.dataset.loaded = 'true';
+    };
+
     const applyPlaybackRate = (video) => {
         const playbackRate = parseFloat(video.dataset.playbackRate || '1');
 
@@ -73,4 +91,32 @@ document.addEventListener('DOMContentLoaded', () => {
     videos.forEach((video) => {
         applyPlaybackRate(video);
     });
+
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                const video = entry.target;
+                if (entry.isIntersecting) {
+                    loadVideoSources(video);
+                    const playPromise = video.play();
+                    if (playPromise) {
+                        playPromise.catch(() => {});
+                    }
+                } else {
+                    video.pause();
+                }
+            });
+        }, {
+            rootMargin: '200px 0px',
+            threshold: 0.25,
+        });
+
+        videos.forEach((video) => {
+            if (video.muted && video.loop) {
+                observer.observe(video);
+            }
+        });
+    } else {
+        videos.forEach(loadVideoSources);
+    }
 });
