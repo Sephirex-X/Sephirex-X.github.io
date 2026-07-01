@@ -147,6 +147,13 @@ span.highlight {
     margin-bottom: 5px;
 }
 
+.news-date {
+    display: inline-block;
+    width: 10ch;
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+}
+
 heading {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 22px;
