@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="PIH: Physical-intrinsic Harmonizer for Editable Neural Reconstruction.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PIH: Physical-intrinsic Harmonizer for Editable Neural Reconstruction</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <section class="hero hero-landing" id="top">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="landing-copy landing-copy-wide has-text-centered">
+          <p class="eyebrow publication-venue-label">Preprint</p>
+          <h1 class="title publication-title">PIH: Physical-intrinsic Harmonizer for Editable Neural Reconstruction</h1>
+          <div class="publication-authors is-size-5">
+            <!-- <span class="author-block"><a href="https://sephirex-x.github.io/">Lingyu Xiao</a>,</span>
+            <span class="author-block"><a href="https://zexinfeng-cn.github.io/">Zexin Feng</a>,</span>
+            <span class="author-block"><a href="https://yougeyxt.github.io/">Xintao Yan</a></span> -->
+            <span class="author-block">Anonymous Authors</span>
+          </div>
+
+          <div class="hero-actions">
+            <span class="button is-light is-rounded button-placeholder" aria-disabled="true">
+              <span class="icon" aria-hidden="true"><i class="fas fa-file-pdf"></i></span>
+              <span>Paper</span>
+            </span>
+            <span class="button is-light is-rounded button-placeholder" aria-disabled="true">
+              <span class="icon" aria-hidden="true"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
+            </span>
+          </div>
+
+          <div class="tldr-card">
+            <p class="tldr-label">TL;DR</p>
+            <!-- <p class="tldr-text">
+              PIH formulates physical-intrinsic harmonization as a compositional interface for correcting imperfect editable neural reconstructions, combining latent flow matching with perceptual endpoint supervision for temporally consistent outputs.
+            </p>
+            <div class="hero-tags">
+              <span class="hero-tag">Physical-intrinsic interface</span>
+              <span class="hero-tag">One-step harmonizer</span>
+              <span class="hero-tag">Illumination control</span>
+            </div> -->
+            <p class="tldr-text">
+              PIH formulates harmonization under physical-intrinsic space, simplifying data curation pipelines and enabling illumination control.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight" id="teaser">
+    <div class="container is-max-desktop">
+      <div class="section-intro has-text-centered">
+        <h2 class="title is-3">Highlights</h2>
+        <p class="section-lead">
+          Our method transforms artifact-prone neural-rendered frames into temporally consistent simulations with flexibility for illumination control and virtual asset insertion. All happen in a single denoising step.
+        </p>
+      </div>
+      <div class="paper-card teaser-panel">
+        <video class="teaser-video" autoplay muted loop playsinline preload="auto" aria-label="PIH teaser animation">
+          <source src="./assets/videos/web/teaser.mp4" type="video/mp4">
+        </video>
+        <p class="media-caption">Harmonizing HK-style vehicles in San Francisco!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="section-intro has-text-centered">
+        <h2 class="title is-3">Abstract</h2>
+      </div>
+      <p class="section-lead abstract-copy">
+        Editable neural driving scenes are essential for scalable simulation, yet neural reconstructions often produce severe artifacts under novel viewpoints and virtual-asset insertion. Existing harmonizers operating in RGB space learn these corrections from heterogeneous failure patterns, making extension to new editing operations data intensive. We reformulate the task as <strong>physical-intrinsic harmonization</strong>, using imperfect depth, normals, albedo, roughness, and illumination recovered from neural reconstruction as a compositional interface. This interface lets evaluated edits, including virtual asset insertion, be expressed by composing physical factors without insertion-specific paired RGB correction data. To make the formulation practical for online simulation, we propose PIH, a one-step harmonizer that directly trained with latent flow matching on the predicted velocity and perceptual supervision on its decoded clean endpoint. Mixed RGB-grounded and self-rollout histories provide temporal context during training to ensure temporal consistency and prevent exposure bias. Experiments across Waymo, nuPlan, and PandaSet show that PIH improves perceptual realism, with PIH preferred over prior harmonizer in 78.81% of human comparisons with much fewer paired training frames, while also capable of illumination control.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="method">
+    <div class="container is-max-desktop">
+      <div class="section-intro has-text-centered">
+        <h2 class="title is-3">Method</h2>
+      </div>
+
+      <figure class="paper-card method-figure">
+        <div class="media-card method-media">
+          <img src="./assets/images/architecture_pipeline_iclr2027.png" alt="Architecture pipeline showing physical-intrinsic conditioning, lighting conditions, temporal context, and one-step harmonization" loading="lazy">
+        </div>
+        <figcaption class="method-caption">Overview of PIH. The model receives the current G-buffers rendering from neural reconstructed scenes and lighting conditions, along with temporal context as reference, and predicts the harmonized RGB latent in a denoising single step.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="gallery">
+    <div class="container is-max-desktop">
+      <div class="section-intro has-text-centered">
+        <h2 class="title is-3">Gallery</h2>
+        <p class="section-lead">
+          Qualitative harmonization results across WOD, nuPlan, and PandaSet.
+        </p>
+      </div>
+
+      <div class="dataset-tabs hero-actions" role="tablist" aria-label="Datasets">
+        <button type="button" class="button is-dark is-rounded" role="tab" aria-selected="true" data-dataset="waymo">Waymo</button>
+        <button type="button" class="button is-light is-rounded" role="tab" aria-selected="false" data-dataset="nuplan">nuPlan</button>
+        <button type="button" class="button is-light is-rounded" role="tab" aria-selected="false" data-dataset="pandaset">PandaSet</button>
+      </div>
+
+      <div class="gallery-pane" role="tabpanel" data-pane="waymo">
+        <div class="carousel-shell gallery-carousel">
+          <div class="paper-card gallery-carousel-card">
+            <div class="gallery-stage"><video class="gallery-slide-video" data-gallery-video="waymo" autoplay muted loop playsinline preload="metadata" aria-label="Waymo gallery video"></video></div>
+            <div class="gallery-carousel-toolbar">
+              <button type="button" class="speed-button" data-playback-speed aria-label="Change playback speed">Playback: 1×</button>
+            </div>
+          </div>
+          <button type="button" class="icon-button carousel-arrow carousel-arrow-prev" data-gallery-prev="waymo" aria-label="Previous Waymo video"></button>
+          <button type="button" class="icon-button carousel-arrow carousel-arrow-next" data-gallery-next="waymo" aria-label="Next Waymo video"></button>
+          <div class="gallery-dots" data-gallery-dots="waymo" role="tablist" aria-label="Waymo gallery videos"></div>
+        </div>
+      </div>
+
+      <div class="gallery-pane" role="tabpanel" data-pane="nuplan" hidden>
+        <div class="carousel-shell gallery-carousel">
+          <div class="paper-card gallery-carousel-card">
+            <div class="gallery-stage"><video class="gallery-slide-video" data-gallery-video="nuplan" autoplay muted loop playsinline preload="metadata" aria-label="nuPlan gallery video"></video></div>
+            <div class="gallery-carousel-toolbar">
+              <button type="button" class="speed-button" data-playback-speed aria-label="Change playback speed">Playback: 1×</button>
+            </div>
+          </div>
+          <button type="button" class="icon-button carousel-arrow carousel-arrow-prev" data-gallery-prev="nuplan" aria-label="Previous nuPlan video"></button>
+          <button type="button" class="icon-button carousel-arrow carousel-arrow-next" data-gallery-next="nuplan" aria-label="Next nuPlan video"></button>
+          <div class="gallery-dots" data-gallery-dots="nuplan" role="tablist" aria-label="nuPlan gallery videos"></div>
+        </div>
+      </div>
+
+      <div class="gallery-pane" role="tabpanel" data-pane="pandaset" hidden>
+        <div class="carousel-shell gallery-carousel">
+          <div class="paper-card gallery-carousel-card">
+            <div class="gallery-stage"><video class="gallery-slide-video" data-gallery-video="pandaset" autoplay muted loop playsinline preload="metadata" aria-label="PandaSet gallery video"></video></div>
+            <div class="gallery-carousel-toolbar">
+              <button type="button" class="speed-button" data-playback-speed aria-label="Change playback speed">Playback: 1×</button>
+            </div>
+          </div>
+          <button type="button" class="icon-button carousel-arrow carousel-arrow-prev" data-gallery-prev="pandaset" aria-label="Previous PandaSet video"></button>
+          <button type="button" class="icon-button carousel-arrow carousel-arrow-next" data-gallery-next="pandaset" aria-label="Next PandaSet video"></button>
+          <div class="gallery-dots" data-gallery-dots="pandaset" role="tablist" aria-label="PandaSet gallery videos"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section" id="relighting">
+    <div class="container is-max-desktop">
+      <div class="section-intro has-text-centered">
+        <h2 class="title is-3">Relighting</h2>
+        <p class="section-lead">
+          By harmonizing under the physical-intrinsic representation, PIH supports illumination control across five scenes and five lighting conditions.
+        </p>
+      </div>
+
+      <div class="carousel-shell relighting-carousel">
+        <div class="paper-card relighting-card">
+          <div class="relighting-grid-stage">
+            <div class="relighting-grid" id="relighting-grid" aria-live="polite"></div>
+          </div>
+          <div class="gallery-carousel-toolbar">
+            <button type="button" class="speed-button" data-playback-speed aria-label="Change playback speed">Playback: 1×</button>
+          </div>
+        </div>
+        <button type="button" class="icon-button carousel-arrow carousel-arrow-prev" id="relighting-prev" aria-label="Previous relighting scene"></button>
+        <button type="button" class="icon-button carousel-arrow carousel-arrow-next" id="relighting-next" aria-label="Next relighting scene"></button>
+        <div class="relighting-dots" id="relighting-dots" role="tablist" aria-label="Relighting scenes"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container is-max-desktop has-text-centered">
+      <p><a href="#top">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
