@@ -459,12 +459,14 @@ a:focus-visible {
     object-fit: contain;
 }
 
-.work-media--video {
+.work-media--video,
+.work-media--video video {
     aspect-ratio: var(--media-ratio);
 }
 
-.work-media--video video {
-    height: 100%;
+.work-media--square-video {
+    width: min(100%, 240px);
+    overflow: hidden;
 }
 
 .work-media--art,
@@ -631,6 +633,10 @@ a:focus-visible {
 
     .work-media--art {
         width: min(70%, 210px);
+    }
+
+    .work-media--square-video {
+        width: min(100%, 240px);
     }
 
     .work-media--logo {
