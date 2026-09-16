@@ -115,6 +115,37 @@ button { font: inherit; }
   line-height: 1.12;
 }
 
+.publication-authors {
+  line-height: 1.8;
+}
+
+.publication-authors a {
+  color: var(--brand);
+}
+
+.publication-authors a:hover,
+.publication-authors a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: .14em;
+}
+
+.publication-affiliations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 1.25rem;
+  margin-top: .45rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.publication-note {
+  flex-basis: 100%;
+  margin-top: .15rem;
+  font-size: .9em;
+}
+
 .landing-summary {
   color: var(--muted);
   font-size: 1.02rem;
